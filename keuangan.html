@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keuangan - SMS</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="flex bg-gray-100 min-h-screen">
+    <div class="sidebar-placeholder"></div>
+    <!-- Main Content -->
+    <div class="flex-1 justify-between flex flex-col ml-64">
+      <!-- Form Tambah Kategori -->
+      <section class="p-4">
+        <div class="bg-white dark:text-gray-800 p-6 rounded-xl shadow-lg">
+          <h2 class="text-lg font-semibold mb-3">Tambah Kategori</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input
+              id="namaKategori"
+              type="text"
+              placeholder="Nama Kategori"
+              class="p-2 rounded-lg border bg-white dark:border-gray-600"
+            />
+            <input
+              id="anggaranKategori"
+              type="number"
+              placeholder="Anggaran (Rp)"
+              class="p-2 rounded-lg border bg-white dark:border-gray-600"
+            />
+            <input
+              id="pengeluaranKategori"
+              type="number"
+              placeholder="Pengeluaran (Rp)"
+              class="p-2 rounded-lg border bg-white dark:border-gray-600"
+            />
+            <button
+              onclick="tambahKategori()"
+              class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700"
+            >
+              Tambah
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Summary -->
+      <section class="p-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div
+          class="bg-white dark:bg-gradient-to-r dark:from-blue-500 dark:to-indigo-500 text-gray-800 dark:text-white rounded-xl p-6 shadow-lg"
+        >
+          <p class="text-sm font-semibold">Total Anggaran</p>
+          <p class="text-3xl font-bold" id="total-anggaran">Rp 0</p>
+        </div>
+        <div
+          class="bg-white dark:bg-gradient-to-r dark:from-yellow-500 dark:to-amber-500 text-gray-800 dark:text-white rounded-xl p-6 shadow-lg"
+        >
+          <p class="text-sm font-semibold">Total Pengeluaran</p>
+          <p
+            class="text-3xl font-bold text-yellow-600 dark:text-yellow-200"
+            id="total-pengeluaran"
+          >
+            Rp 0
+          </p>
+        </div>
+        <div
+          class="bg-white dark:bg-gradient-to-r dark:from-green-500 dark:to-emerald-500 text-gray-800 dark:text-white rounded-xl p-6 shadow-lg"
+        >
+          <p class="text-sm font-semibold">Sisa Anggaran</p>
+          <p
+            class="text-3xl font-bold text-green-600 dark:text-green-200"
+            id="sisa-anggaran"
+          >
+            Rp 0
+          </p>
+        </div>
+      </section>
+
+      <!-- Kontainer Kategori -->
+      <main
+        id="budget-container"
+        class="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+      ></main>
+      <script src="./js/keuangan.js"></script>
+    </div>
+  </body>
+</html>

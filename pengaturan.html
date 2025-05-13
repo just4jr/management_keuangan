@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="flex bg-gray-100 min-h-screen">
+    <div class="sidebar-placeholder"></div>
+    <!-- Main Content -->
+     <main class="flex-1 ml-64 p-6">
+        <!-- Judul dan menu -->
+        <div class="mb-6">
+          <h2 class="text-2xl font-semibold mb-4">Pengaturan</h2>
+          <ul class="grid-cols-1 gap-4 bg-gray-100 rounded-lg">
+            <li class="bg-white mb-2 p-4 rounded-lg">
+                <a
+                  href="#akun"
+                  class="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition"
+                >
+                  <i class="bi bi-person-circle text-xl"></i>
+                  <span>Akun</span>
+                </a>
+              </li>
+              <li class="bg-white mb-2 p-4 rounded-lg">
+                <a
+                  href="#notifikasi"
+                  class="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition"
+                >
+                  <i class="bi bi-bell text-xl"></i>
+                  <span>Notifikasi</span>
+                </a>
+              </li>
+              <li class="bg-white mb-2 p-4 rounded-lg">
+                <a
+                  href="#privasi"
+                  class="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition"
+                >
+                  <i class="bi bi-shield-lock text-xl"></i>
+                  <span>Privasi</span>
+                </a>
+              </li>
+              <li class="bg-white mb-2 p-4 rounded-lg">
+                <a
+                  href="#tema"
+                  class="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition"
+                >
+                  <i class="bi bi-palette text-xl"></i>
+                  <span>Tema</span>
+                </a>
+              </li>
+              <li class="bg-white mb-2 p-4 rounded-lg">
+                <a
+                  href="#bahasa"
+                  class="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition"
+                >
+                  <i class="bi bi-translate text-xl"></i>
+                  <span>Bahasa</span>
+                </a>
+              </li>
+              <li class="bg-white mb-2 p-4 rounded-lg">
+                <a
+                  href="#keamanan"
+                  class="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition"
+                >
+                  <i class="bi bi-lock text-xl"></i>
+                  <span>Keamanan</span>
+                </a>
+              </li>
+          </ul>
+        </div>
+      </main>
+
+    <script src="./js/pengaturan.js"></script>
+  </body>
+</html>

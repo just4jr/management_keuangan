@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FINE Dashboard</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="flex bg-gray-100 min-h-screen">
+    <!-- Sidebar Load Placeholder -->
+    <div class="sidebar-placeholder"></div>
+
+    <!-- Main content -->
+    <main class="flex-1 ml-64 p-6">
+      <!-- Wrapper Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+        <!-- Current Balance -->
+        <div
+          class="bg-white shadow rounded-lg p-4 flex items-start space-x-4 col-span-1"
+        >
+          <div class="text-blue-500 text-3xl">
+            <i class="bi bi-wallet2"></i>
+          </div>
+          <div>
+            <h4 class="text-gray-500 text-sm">Current Balance</h4>
+            <p class="text-xl font-semibold text-gray-800">$1,250.00</p>
+            <p class="text-green-500 text-sm">+15% from last month</p>
+          </div>
+        </div>
+
+        <!-- Monthly Expenses -->
+        <div
+          class="bg-white shadow rounded-lg p-4 flex items-start space-x-4 col-span-1"
+        >
+          <div class="text-red-500 text-3xl">
+            <i class="bi bi-cash-stack"></i>
+          </div>
+          <div>
+            <h4 class="text-gray-500 text-sm">Monthly Expenses</h4>
+            <p class="text-xl font-semibold text-gray-800">$750.00</p>
+            <p class="text-red-500 text-sm">-5% from last month</p>
+          </div>
+        </div>
+
+        <!-- Total Savings -->
+        <div
+          class="bg-white shadow rounded-lg p-4 flex items-start space-x-4 col-span-1"
+        >
+          <div class="text-green-500 text-3xl">
+            <i class="bi bi-piggy-bank"></i>
+          </div>
+          <div>
+            <h4 class="text-gray-500 text-sm">Total Savings</h4>
+            <p class="text-xl font-semibold text-gray-800">$2,500.00</p>
+            <p class="text-green-500 text-sm">+25% from last month</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grid for Budget & Transactions -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Budget Overview -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="flex justify-between items-center mb-4">
+            <h2 class="text-lg font-semibold text-gray-800">Budget Overview</h2>
+            <a href="#" class="text-blue-600 text-sm hover:underline"
+              >Manage Budget</a
+            >
+          </div>
+
+          <!-- Budget Bars -->
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between text-sm mb-1">
+                <span>Food & Dining</span>
+                <span>$150 / $200</span>
+              </div>
+              <div class="w-full h-2 bg-gray-200 rounded">
+                <div class="h-2 bg-blue-500 rounded" style="width: 75%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm mb-1">
+                <span>Transportation</span>
+                <span>$80 / $100</span>
+              </div>
+              <div class="w-full h-2 bg-gray-200 rounded">
+                <div class="h-2 bg-blue-500 rounded" style="width: 80%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm mb-1">
+                <span>Education</span>
+                <span>$300 / $500</span>
+              </div>
+              <div class="w-full h-2 bg-gray-200 rounded">
+                <div class="h-2 bg-blue-500 rounded" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recent Transactions -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="flex justify-between items-center mb-4">
+            <h2 class="text-lg font-semibold text-gray-800">
+              Recent Transactions
+            </h2>
+            <a href="#" class="text-blue-600 text-sm hover:underline"
+              >View All</a
+            >
+          </div>
+
+          <ul class="space-y-4">
+            <li class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="bg-blue-100 p-2 rounded-full">
+                  <span class="text-blue-500 text-lg">🍽️</span>
+                </div>
+                <div>
+                  <p class="font-medium">Campus Cafeteria</p>
+                  <p class="text-sm text-gray-500">Food & Dining</p>
+                </div>
+              </div>
+              <span class="text-red-600 font-medium">- $12.50</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="bg-blue-100 p-2 rounded-full">
+                  <span class="text-blue-500 text-lg">📘</span>
+                </div>
+                <div>
+                  <p class="font-medium">Textbook Purchase</p>
+                  <p class="text-sm text-gray-500">Education</p>
+                </div>
+              </div>
+              <span class="text-red-600 font-medium">- $85.00</span>
+            </li>
+            <li class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="bg-green-100 p-2 rounded-full">
+                  <span class="text-green-500 text-lg">🎓</span>
+                </div>
+                <div>
+                  <p class="font-medium">Scholarship Credit</p>
+                  <p class="text-sm text-gray-500">Income</p>
+                </div>
+              </div>
+              <span class="text-green-600 font-medium">+ $500.00</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- Script to load sidebar -->
+    <script src="./js/dashboard.js"></script>
+  </body>
+</html>
